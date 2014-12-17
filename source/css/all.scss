@@ -1,0 +1,45 @@
+html, body {
+  margin: 0;
+  border: none;
+  padding: 0;
+
+  width: 100%;
+  height: 100%;
+}
+
+body {
+  display: flex;
+  flex-direction: row;
+  align-items: stretch;
+}
+
+#options {
+  padding: 0.5rem;
+}
+
+#model-options {
+  display: table;
+  p {
+    display: table-row;
+    label {
+      display: table-cell;
+      line-height: 1.5;
+      padding-right: 0.5em;
+    }
+    input {
+      display: table-cell;
+      text-align: right;
+    }
+  }
+}
+
+#preview {
+  flex: 1;
+  height: 100%;
+
+  svg {
+    display: block;
+    width: 100%;
+    height: 100%;
+  }
+}
